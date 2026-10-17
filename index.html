@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waqas Ali | Senior DevOps & Cloud Infrastructure Engineer</title>
+  <meta name="description" content="Portfolio of Waqas Ali - Senior DevOps & Cloud Infrastructure Engineer specializing in Kubernetes, Terraform IaC, AWS/Azure, DevSecOps CI/CD pipelines, and high-availability cloud architecture.">
+  <meta name="keywords" content="Waqas DevOps, DevOps Engineer, Cloud Architect, Kubernetes, Docker, Terraform, CI/CD, AWS, Azure, ArgoCD, Prometheus, DevSecOps">
+  <meta name="author" content="Waqas Ali">
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Waqas Ali | Senior DevOps Engineer & Cloud Architect">
+  <meta property="og:description" content="Architecting resilient cloud platforms, automated GitOps CI/CD pipelines, and high-availability Kubernetes clusters.">
+  <meta property="og:type" content="website">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Cloud Network Canvas & Glows -->
+  <canvas id="network-canvas"></canvas>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+        <span>waqas<span class="tag">.devops</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#pipeline" class="nav-link">CI/CD Pipeline</a></li>
+        <li><a href="#skills" class="nav-link">Tech Matrix</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#terminal" class="nav-link">DevOps CLI</a></li>
+        <li><a href="#certs" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span>AVAILABLE FOR HIRE</span>
+        </div>
+        <button class="btn-terminal-toggle" id="sound-toggle-btn" title="Toggle audio feedback">
+          <i class="fa-solid fa-volume-high"></i> SFX: ON
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge-cluster">
+            <span class="dot"></span>
+            <span>CLUSTER: PROD-US-EAST-1 // UPTIME: 99.99% // K8S v1.30</span>
+          </div>
+
+          <h1 class="hero-title">
+            Architecting Resilient Cloud Infrastructure &
+            <span class="gradient-text">Automated CI/CD.</span>
+            <span class="engineer-title">Waqas Ali — Senior DevOps Engineer</span>
+          </h1>
+
+          <p class="hero-lead">
+            I engineer production-grade Kubernetes platforms, declarative Terraform Infrastructure as Code (IaC), and DevSecOps pipelines. Bridging developer velocity with high-availability cloud stability and automated self-healing.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#pipeline" class="btn btn-primary">
+              <i class="fa-solid fa-bolt"></i> Live Pipeline Demo
+            </a>
+            <a href="#projects" class="btn btn-outline">
+              <i class="fa-solid fa-cubes-stacked"></i> View Architecture
+            </a>
+            <a href="#terminal" class="btn btn-outline">
+              <i class="fa-solid fa-terminal"></i> Open DevOps CLI
+            </a>
+          </div>
+
+          <div class="hero-tech-stack-strip">
+            <span class="tech-strip-label">Stack:</span>
+            <div class="tech-strip-icons">
+              <span class="tech-pill"><i class="fa-brands fa-docker"></i> Docker</span>
+              <span class="tech-pill"><i class="fa-solid fa-dharmachakra"></i> Kubernetes</span>
+              <span class="tech-pill"><i class="fa-solid fa-cloud"></i> Terraform</span>
+              <span class="tech-pill"><i class="fa-brands fa-aws"></i> AWS</span>
+              <span class="tech-pill"><i class="fa-brands fa-git-alt"></i> ArgoCD</span>
+              <span class="tech-pill"><i class="fa-solid fa-chart-line"></i> Prometheus</span>
+              <span class="tech-pill"><i class="fa-brands fa-linux"></i> Linux</span>
+              <span class="tech-pill"><i class="fa-brands fa-python"></i> Python</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+          <div class="avatar-card-frame">
+            <div class="avatar-card-inner">
+              <img src="assets/images/avatar.jpg" alt="Waqas Ali - Senior DevOps Engineer" loading="eager">
+              <div class="avatar-overlay-gradient">
+                <div class="avatar-caption-title">Waqas Ali</div>
+                <div class="avatar-caption-role">
+                  <i class="fa-solid fa-shield-halved"></i> Cloud Platform & SRE Lead
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Status Chips -->
+            <div class="floating-chip floating-chip-1">
+              <span class="chip-icon" style="color: #00f2fe;"><i class="fa-solid fa-dharmachakra"></i></span>
+              <div class="chip-text">
+                <strong>Kubernetes Cluster</strong>
+                <span>18 Nodes Healthy // 0 Evictions</span>
+              </div>
+            </div>
+
+            <div class="floating-chip floating-chip-2">
+              <span class="chip-icon" style="color: #10b981;"><i class="fa-solid fa-circle-check"></i></span>
+              <div class="chip-text">
+                <strong>GitOps Deployment</strong>
+                <span>ArgoCD In-Sync (Zero Drift)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE METRICS BANNER -->
+  <section class="metrics-banner">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-item">
+          <div class="metric-icon-box">
+            <i class="fa-solid fa-shield-heart"></i>
+          </div>
+          <div>
+            <div class="metric-number">99.99%</div>
+            <div class="metric-label">Production SLA Uptime</div>
+          </div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon-box">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+          <div>
+            <div class="metric-number">4,800+</div>
+            <div class="metric-label">Automated Deployments</div>
+          </div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon-box">
+            <i class="fa-solid fa-gauge-high"></i>
+          </div>
+          <div>
+            <div class="metric-number">&lt; 18ms</div>
+            <div class="metric-label">p99 Service Latency</div>
+          </div>
+        </div>
+
+        <div class="metric-item">
+          <div class="metric-icon-box">
+            <i class="fa-solid fa-piggy-bank"></i>
+          </div>
+          <div>
+            <div class="metric-number">42%</div>
+            <div class="metric-label">Cloud Cost Saved via IaC</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CI/CD PIPELINE VISUALIZER -->
+  <section class="section pipeline-section" id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-code-commit"></i> Interactive Engine</span>
+        <h2 class="section-title">Automated <span class="gradient-text">DevSecOps Pipeline</span></h2>
+        <p class="section-desc">Experience the zero-downtime automated deployment sequence. Click "Trigger Pipeline Build" to simulate a real production rollout.</p>
+      </div>
+
+      <div class="pipeline-card">
+        <div class="pipeline-controls-bar">
+          <div class="pipeline-title-group">
+            <h3>
+              <i class="fa-solid fa-network-wired" style="color: #00f2fe;"></i>
+              Production Release Engine
+              <span class="branch-badge"><i class="fa-solid fa-code-branch"></i> branch: main</span>
+            </h3>
+          </div>
+          <div class="pipeline-btn-group">
+            <button class="btn btn-primary" id="pipeline-trigger-btn">
+              <i class="fa-solid fa-play"></i> Trigger Pipeline Build
+            </button>
+            <button class="btn btn-outline" id="pipeline-reset-btn">
+              <i class="fa-solid fa-rotate-right"></i> Reset
+            </button>
+          </div>
+        </div>
+
+        <!-- Animated Stages Flow -->
+        <div class="pipeline-stages">
+          <div class="pipeline-progress-line"></div>
+
+          <!-- Stage 1 -->
+          <div class="stage-node" data-stage="0">
+            <div class="stage-circle">
+              <i class="fa-solid fa-code-commit"></i>
+            </div>
+            <div class="stage-name">1. Git Commit</div>
+            <div class="stage-status">Webhook Ready</div>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="stage-node" data-stage="1">
+            <div class="stage-circle">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="stage-name">2. SAST Security</div>
+            <div class="stage-status">Trivy &amp; Sonar</div>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="stage-node" data-stage="2">
+            <div class="stage-circle">
+              <i class="fa-brands fa-docker"></i>
+            </div>
+            <div class="stage-name">3. Docker Build</div>
+            <div class="stage-status">Multi-Stage</div>
+          </div>
+
+          <!-- Stage 4 -->
+          <div class="stage-node" data-stage="3">
+            <div class="stage-circle">
+              <i class="fa-solid fa-vial-circle-check"></i>
+            </div>
+            <div class="stage-name">4. Auto Tests</div>
+            <div class="stage-status">PyTest &amp; E2E</div>
+          </div>
+
+          <!-- Stage 5 -->
+          <div class="stage-node" data-stage="4">
+            <div class="stage-circle">
+              <i class="fa-solid fa-dharmachakra"></i>
+            </div>
+            <div class="stage-name">5. K8s Deploy</div>
+            <div class="stage-status">ArgoCD Sync</div>
+          </div>
+
+          <!-- Stage 6 -->
+          <div class="stage-node" data-stage="5">
+            <div class="stage-circle">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="stage-name">6. Health &amp; SLO</div>
+            <div class="stage-status">200 OK Live</div>
+          </div>
+        </div>
+
+        <!-- Terminal Output Stream -->
+        <div class="pipeline-console">
+          <div class="console-header">
+            <div class="console-dots">
+              <span class="dot-red"></span>
+              <span class="dot-yellow"></span>
+              <span class="dot-green"></span>
+            </div>
+            <span class="console-title"><i class="fa-solid fa-terminal"></i> worker-runner-01.waqas-cloud.internal (Live Output)</span>
+            <span style="font-size: 0.75rem; color: #10b981;">● RUNNER READY</span>
+          </div>
+          <div class="console-body" id="pipeline-console-body">
+            <div class="log-line">
+              <span class="log-time">[SYSTEM]</span>
+              <span class="log-tag info">[READY]</span>
+              <span class="log-msg">Pipeline engine idle. Waiting for build trigger or commit hook...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & PHILOSOPHY SECTION -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Background &amp; Philosophy</span>
+          <h3>Bridging Developer Velocity With Bulletproof Infrastructure</h3>
+          <p>
+            Hi, I'm <strong>Waqas Ali</strong>. Over years of managing high-scale cloud platforms, my mission has always been simple: empower engineering teams to deploy with confidence without ever worrying about downtime, security debt, or infrastructure fragility.
+          </p>
+          <p>
+            I treat infrastructure as reliable software—declarative, versioned, automated, and observable. Whether orchestrating Kubernetes clusters across multiple clouds or slashing build times by 85%, I architect systems that survive failures seamlessly.
+          </p>
+
+          <div class="core-pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+              <div class="pillar-title">Infrastructure as Code</div>
+              <div class="pillar-desc">Terraform and Ansible blueprints for reproducible, multi-cloud deployments with zero configuration drift.</div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-infinity"></i></div>
+              <div class="pillar-title">GitOps Continuous Delivery</div>
+              <div class="pillar-desc">Automated declarative rollouts using ArgoCD and Flux, ensuring the Git repository is the absolute single source of truth.</div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-lock"></i></div>
+              <div class="pillar-title">DevSecOps &amp; Compliance</div>
+              <div class="pillar-desc">Automated container image scanning, RBAC least-privilege, and secret management via HashiCorp Vault.</div>
+            </div>
+
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <div class="pillar-title">Observability &amp; SRE</div>
+              <div class="pillar-desc">Full-stack distributed tracing with Prometheus, Grafana, and OpenTelemetry to uphold strict 99.99% SLAs.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-visual">
+          <div class="arch-card-widget">
+            <div class="arch-header">
+              <div>
+                <h4 style="color:#fff; font-size:1.15rem; margin-bottom: 0.2rem;">Live Cluster Health</h4>
+                <span class="mono" style="font-size:0.75rem; color:#94a3b8;">Topology: AWS EKS Multi-Region Mesh</span>
+              </div>
+              <span class="status-badge"><span class="status-dot"></span> HEALTHY</span>
+            </div>
+
+            <div class="arch-node-list">
+              <div class="arch-node">
+                <div class="node-info">
+                  <div class="node-icon"><i class="fa-solid fa-server"></i></div>
+                  <div>
+                    <div class="node-name">Control Plane (API Servers)</div>
+                    <div class="node-meta">us-east-1a / us-east-1b / us-east-1c</div>
+                  </div>
+                </div>
+                <span class="node-status-badge">3/3 Sync</span>
+              </div>
+
+              <div class="arch-node">
+                <div class="node-info">
+                  <div class="node-icon"><i class="fa-solid fa-cubes"></i></div>
+                  <div>
+                    <div class="node-name">Worker Node Pool (Spot + On-Demand)</div>
+                    <div class="node-meta">Auto-Scaler Karpenter active (18 instances)</div>
+                  </div>
+                </div>
+                <span class="node-status-badge">100% Ready</span>
+              </div>
+
+              <div class="arch-node">
+                <div class="node-info">
+                  <div class="node-icon"><i class="fa-solid fa-shield-virus"></i></div>
+                  <div>
+                    <div class="node-name">Cilium eBPF Service Mesh</div>
+                    <div class="node-meta">Network Policies &amp; mTLS encryption enabled</div>
+                  </div>
+                </div>
+                <span class="node-status-badge">Enforced</span>
+              </div>
+
+              <div class="arch-node">
+                <div class="node-info">
+                  <div class="node-icon"><i class="fa-solid fa-route"></i></div>
+                  <div>
+                    <div class="node-name">NGINX / Cloudflare Anycast Ingress</div>
+                    <div class="node-meta">DDoS Protection &amp; SSL Termination</div>
+                  </div>
+                </div>
+                <span class="node-status-badge">Active (18ms)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & TECH STACK MATRIX -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-microchip"></i> Proficiencies</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills Matrix</span></h2>
+        <p class="section-desc">Tools and technologies I use daily to orchestrate, automate, and safeguard production cloud environments.</p>
+      </div>
+
+      <div class="skills-tabs">
+        <button class="skill-tab-btn active" data-cat="all">All Domains</button>
+        <button class="skill-tab-btn" data-cat="cloud">Cloud &amp; IaC</button>
+        <button class="skill-tab-btn" data-cat="k8s">Containers &amp; K8s</button>
+        <button class="skill-tab-btn" data-cat="cicd">CI/CD &amp; GitOps</button>
+        <button class="skill-tab-btn" data-cat="observability">Observability &amp; SRE</button>
+        <button class="skill-tab-btn" data-cat="security">DevSecOps &amp; Scripting</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Kubernetes -->
+        <div class="skill-card" data-cat="k8s">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-dharmachakra"></i></div>
+            <span class="skill-level-text">98% Mastery</span>
+          </div>
+          <h3 class="skill-title">Kubernetes (K8s)</h3>
+          <p class="skill-tools-list">EKS, AKS, Helm, Kustomize, Istio, Cilium, Karpenter</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 98%;"></div></div>
+        </div>
+
+        <!-- Terraform -->
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-cubes"></i></div>
+            <span class="skill-level-text">95% Mastery</span>
+          </div>
+          <h3 class="skill-title">Terraform &amp; IaC</h3>
+          <p class="skill-tools-list">Terraform Modules, Terragrunt, State Locking, Ansible</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+        </div>
+
+        <!-- AWS Cloud -->
+        <div class="skill-card" data-cat="cloud">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-aws"></i></div>
+            <span class="skill-level-text">94% Mastery</span>
+          </div>
+          <h3 class="skill-title">Amazon Web Services (AWS)</h3>
+          <p class="skill-tools-list">EKS, VPC Peering, IAM, RDS Aurora, S3, Route53, KMS</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+        </div>
+
+        <!-- CI/CD Pipelines -->
+        <div class="skill-card" data-cat="cicd">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-code-merge"></i></div>
+            <span class="skill-level-text">96% Mastery</span>
+          </div>
+          <h3 class="skill-title">CI/CD &amp; GitOps</h3>
+          <p class="skill-tools-list">GitHub Actions, GitLab CI, ArgoCD, Jenkins, Blue/Green</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 96%;"></div></div>
+        </div>
+
+        <!-- Docker -->
+        <div class="skill-card" data-cat="k8s">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-docker"></i></div>
+            <span class="skill-level-text">98% Mastery</span>
+          </div>
+          <h3 class="skill-title">Docker &amp; Containerization</h3>
+          <p class="skill-tools-list">Multi-stage builds, Distroless, Docker Compose, BuildKit</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 98%;"></div></div>
+        </div>
+
+        <!-- Observability -->
+        <div class="skill-card" data-cat="observability">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+            <span class="skill-level-text">92% Mastery</span>
+          </div>
+          <h3 class="skill-title">Observability &amp; Telemetry</h3>
+          <p class="skill-tools-list">Prometheus, Grafana, OpenTelemetry, Loki, Datadog</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+        </div>
+
+        <!-- DevSecOps -->
+        <div class="skill-card" data-cat="security">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-solid fa-user-shield"></i></div>
+            <span class="skill-level-text">90% Mastery</span>
+          </div>
+          <h3 class="skill-title">DevSecOps &amp; Hardening</h3>
+          <p class="skill-tools-list">Trivy, SonarQube, HashiCorp Vault, Falco, CIS Benchmarks</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+        </div>
+
+        <!-- Linux & Scripting -->
+        <div class="skill-card" data-cat="security">
+          <div class="skill-card-top">
+            <div class="skill-icon-wrap"><i class="fa-brands fa-linux"></i></div>
+            <span class="skill-level-text">95% Mastery</span>
+          </div>
+          <h3 class="skill-title">Linux &amp; Automation Scripting</h3>
+          <p class="skill-tools-list">Bash, Python 3, Go, Kernel tuning, Systemd, Networking</p>
+          <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS SECTION -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Architectures</span>
+        <h2 class="section-title">Production <span class="gradient-text">DevOps Projects</span></h2>
+        <p class="section-desc">Real-world infrastructure architectures designed and deployed to handle millions of requests with resilience.</p>
+      </div>
+
+      <div class="projects-filter-bar">
+        <button class="filter-btn active" data-filter="all">All Architectures</button>
+        <button class="filter-btn" data-filter="k8s">Kubernetes &amp; Mesh</button>
+        <button class="filter-btn" data-filter="cicd">DevSecOps CI/CD</button>
+        <button class="filter-btn" data-filter="observability">Observability</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="k8s cloud">
+          <div class="project-image-box">
+            <img src="assets/images/project-k8s.jpg" alt="Multi-Region Kubernetes GitOps Architecture">
+            <span class="project-badge-tag"><i class="fa-solid fa-dharmachakra"></i> Kubernetes</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Multi-Region Kubernetes GitOps Mesh</h3>
+            <p class="project-summary">
+              High-availability multi-region Kubernetes cluster deployment spanning 3 geographical zones with automated GitOps synchronization via ArgoCD, global Anycast routing, and Cilium eBPF service mesh.
+            </p>
+            <div class="project-metrics-row">
+              <div class="metric-micro-item">
+                <div class="metric-micro-val">99.999%</div>
+                <div class="metric-micro-lbl">Availability Target</div>
+              </div>
+              <div class="metric-micro-item">
+                <div class="metric-micro-val">&lt; 25ms</div>
+                <div class="metric-micro-lbl">Cross-Region Failover</div>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">AWS EKS</span>
+              <span class="project-tag">ArgoCD</span>
+              <span class="project-tag">Terraform</span>
+              <span class="project-tag">Cilium</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-project-modal" data-project="k8s-mesh">
+                View Architecture Spec <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="cicd security">
+          <div class="project-image-box">
+            <img src="assets/images/project-cicd.jpg" alt="DevSecOps Zero-Downtime Blue/Green CI/CD Pipeline">
+            <span class="project-badge-tag"><i class="fa-solid fa-shield-halved"></i> DevSecOps</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Zero-Downtime Blue/Green CI/CD Pipeline</h3>
+            <p class="project-summary">
+              Automated end-to-end delivery pipeline integrating static code analysis, vulnerability scanning with Trivy and SonarQube, and zero-downtime Blue/Green traffic switching with instant canary rollbacks.
+            </p>
+            <div class="project-metrics-row">
+              <div class="metric-micro-item">
+                <div class="metric-micro-val">4.2 min</div>
+                <div class="metric-micro-lbl">Commit to Production</div>
+              </div>
+              <div class="metric-micro-item">
+                <div class="metric-micro-val">0 sec</div>
+                <div class="metric-micro-lbl">Deployment Downtime</div>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">GitHub Actions</span>
+              <span class="project-tag">Docker</span>
+              <span class="project-tag">Trivy</span>
+              <span class="project-tag">SonarQube</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-project-modal" data-project="cicd-sec">
+                View Architecture Spec <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="observability cloud">
+          <div class="project-image-box">
+            <img src="assets/images/project-observability.jpg" alt="Enterprise Cloud Observability & Telemetry Command Center">
+            <span class="project-badge-tag"><i class="fa-solid fa-chart-line"></i> SRE</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Enterprise Cloud Observability Platform</h3>
+            <p class="project-summary">
+              Unified telemetry command center collecting metrics, distributed traces, and log aggregation across 200+ containerized microservices with dynamic auto-remediation alerting rules.
+            </p>
+            <div class="project-metrics-row">
+              <div class="metric-micro-item">
+                <div class="metric-micro-val">-86%</div>
+                <div class="metric-micro-lbl">MTTR Incident Time</div>
+              </div>
+              <div class="metric-micro-item">
+                <div class="metric-micro-val">100k+</div>
+                <div class="metric-micro-lbl">Samples / Sec Ingested</div>
+              </div>
+            </div>
+            <div class="project-tags">
+              <span class="project-tag">Prometheus</span>
+              <span class="project-tag">Grafana</span>
+              <span class="project-tag">OpenTelemetry</span>
+              <span class="project-tag">Loki</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-project-modal" data-project="observability">
+                View Architecture Spec <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE IN-BROWSER TERMINAL CLI -->
+  <section class="section terminal-section" id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-terminal"></i> In-Browser CLI</span>
+        <h2 class="section-title">DevOps <span class="gradient-text">Interactive Terminal</span></h2>
+        <p class="section-desc">Type commands below or click the quick command chips to interact with my virtual cloud environment.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="console-dots">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+          </div>
+          <div class="terminal-header-title">
+            <i class="fa-solid fa-server"></i> waqas@devops-cluster: ~ (bash / x86_64)
+          </div>
+          <span style="font-size: 0.75rem; color: #10b981;">● SSH ESTABLISHED</span>
+        </div>
+
+        <div class="terminal-suggestions-bar">
+          <span class="suggest-label">Quick Commands:</span>
+          <button class="cmd-pill" data-cmd="help">help</button>
+          <button class="cmd-pill" data-cmd="whoami">whoami</button>
+          <button class="cmd-pill" data-cmd="skills">skills</button>
+          <button class="cmd-pill" data-cmd="projects">projects</button>
+          <button class="cmd-pill" data-cmd="deploy">deploy</button>
+          <button class="cmd-pill" data-cmd="status">status</button>
+          <button class="cmd-pill" data-cmd="certs">certs</button>
+          <button class="cmd-pill" data-cmd="contact">contact</button>
+          <button class="cmd-pill" data-cmd="clear">clear</button>
+        </div>
+
+        <div class="terminal-screen" id="terminal-screen">
+          <div class="term-line">
+            <span class="term-prompt">waqas@devops-cluster:~$</span> <span class="term-cmd">neofetch</span>
+          </div>
+          <div class="term-output">
+<pre style="font-family: inherit; margin: 0; color: #38bdf8;">
+       .---.          <strong style="color:#fff;">waqas@devops-cluster</strong>
+      /     \         --------------------
+     | () () |        <strong>OS:</strong> Alpine Linux Cloud Native v3.19
+      \  -  /         <strong>Host:</strong> AWS EC2 EKS Node Pool (us-east-1)
+       `---`          <strong>Kernel:</strong> 6.1.72-k8s-ebpf
+                      <strong>Uptime:</strong> 428 days, 14 hours, 22 mins
+                      <strong>Shell:</strong> bash 5.2.21
+                      <strong>K8s:</strong> v1.30.2 (HA Control Plane)
+                      <strong>IaC:</strong> Terraform v1.8.4
+                      <strong>Status:</strong> Ready for new Senior DevOps challenges!
+</pre>
+          </div>
+          <div class="term-line" style="margin-top: 10px;">
+            <span class="term-output" style="color: #94a3b8;">Type <span style="color: #00f2fe;">help</span> to see all available commands, or click any chip above!</span>
+          </div>
+        </div>
+
+        <div style="padding: 0.75rem 1.25rem; background: rgba(0,0,0,0.4); border-top: 1px solid rgba(255,255,255,0.06);">
+          <div class="term-input-row">
+            <span class="term-prompt">waqas@devops-cluster:~$</span>
+            <input type="text" id="terminal-cli-input" class="terminal-input" placeholder="Type a command (e.g. whoami, deploy, skills, status) and hit Enter..." autofocus autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section class="section" id="certs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-award"></i> Verified Credentials</span>
+        <h2 class="section-title">Certifications &amp; <span class="gradient-text">Accreditations</span></h2>
+        <p class="section-desc">Industry-standard certifications validating cloud architecture, Kubernetes administration, and infrastructure automation.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-badge-icon">
+            <i class="fa-brands fa-aws"></i>
+          </div>
+          <div class="cert-info">
+            <h4>AWS Certified Solutions Architect</h4>
+            <div class="cert-issuer">Amazon Web Services</div>
+            <div class="cert-date">Professional Level • Active</div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge-icon">
+            <i class="fa-solid fa-dharmachakra"></i>
+          </div>
+          <div class="cert-info">
+            <h4>Certified Kubernetes Administrator (CKA)</h4>
+            <div class="cert-issuer">Cloud Native Computing Foundation (CNCF)</div>
+            <div class="cert-date">Active • ID: CKA-284910</div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge-icon">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <div class="cert-info">
+            <h4>HashiCorp Certified: Terraform Associate</h4>
+            <div class="cert-issuer">HashiCorp</div>
+            <div class="cert-date">IaC Infrastructure Automation</div>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-badge-icon">
+            <i class="fa-brands fa-linux"></i>
+          </div>
+          <div class="cert-info">
+            <h4>Linux Foundation Certified SysAdmin (LFCS)</h4>
+            <div class="cert-issuer">The Linux Foundation</div>
+            <div class="cert-date">Enterprise Linux &amp; Kernel</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Let's Connect</span>
+        <h2 class="section-title">Ready To Level Up Your <span class="gradient-text">Infrastructure?</span></h2>
+        <p class="section-desc">Available for full-time Senior DevOps / Cloud Architect roles, high-impact consulting, or Kubernetes migrations.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>Communication Endpoints</h3>
+          <p>
+            Whether you need to overhaul your CI/CD delivery pipeline, architect multi-cloud Kubernetes clusters, or optimize AWS infrastructure costs, let's talk.
+          </p>
+
+          <div class="contact-channel-list">
+            <div class="contact-channel-item">
+              <div class="channel-detail">
+                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <div class="channel-label">Direct Email</div>
+                  <div class="channel-val">contact.waqasdevops@gmail.com</div>
+                </div>
+              </div>
+              <button class="btn-copy-chip" data-copy="contact.waqasdevops@gmail.com">Copy Email</button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-detail">
+                <div class="channel-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div>
+                  <div class="channel-label">LinkedIn Profile</div>
+                  <div class="channel-val">linkedin.com/in/waqas-devops</div>
+                </div>
+              </div>
+              <button class="btn-copy-chip" data-copy="https://linkedin.com/in/waqas-devops">Copy URL</button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-detail">
+                <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <div class="channel-label">GitHub Repositories</div>
+                  <div class="channel-val">github.com/waqas-devops</div>
+                </div>
+              </div>
+              <button class="btn-copy-chip" data-copy="https://github.com/waqas-devops">Copy URL</button>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-detail">
+                <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <div class="channel-label">Location &amp; Availability</div>
+                  <div class="channel-val">Remote / Relocation Open</div>
+                </div>
+              </div>
+              <span class="status-badge" style="padding: 0.2rem 0.6rem;"><span class="status-dot"></span> Active</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <form id="portfolio-contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">NAME / ORGANIZATION</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Sarah Jenkins (Acme Cloud)" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">EMAIL ADDRESS</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="s.jenkins@acme.io" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">PROJECT SCOPE</label>
+              <select id="contact-subject" class="form-control" style="background:#040711;">
+                <option value="k8s">Kubernetes Migration &amp; Architecture</option>
+                <option value="cicd">CI/CD Pipeline Automation &amp; GitOps</option>
+                <option value="iac">Terraform Cloud Infrastructure Setup</option>
+                <option value="fulltime">Senior DevOps / SRE Full-Time Role</option>
+                <option value="other">General Cloud Engineering Inquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-msg" class="form-label">TRANSMISSION MESSAGE</label>
+              <textarea id="contact-msg" class="form-control" placeholder="Describe your infrastructure goals, existing cloud stack, or project timeline..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Transmit Message to Waqas
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <span class="mono" style="font-weight:700; color:#fff;">&gt;_ waqas.devops</span>
+        <span class="footer-text">© 2026 Waqas Ali. Engineered with high-availability &amp; zero-toil.</span>
+      </div>
+
+      <div class="footer-right">
+        <span class="status-badge"><span class="status-dot"></span> ALL CLUSTERS OPERATIONAL</span>
+        <button class="btn-scroll-top" id="scroll-top-btn" title="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ARCHITECTURE SPEC MODAL / LIGHTBOX -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modal-title" style="color: #fff; font-size: 1.3rem;">Project Architecture Details</h3>
+        <button class="modal-close-btn" id="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Content injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
